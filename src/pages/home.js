@@ -4,7 +4,7 @@ const Home = () => {
     return (
         <div>
             <p>Home Page</p>
-            <Link to={'/countries'}>Go to Countries</Link>
+            <Link data-testid="countriesLink" to={'/countries'}>Go to Countries</Link>
         </div>
     )
 }

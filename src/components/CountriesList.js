@@ -5,12 +5,12 @@ const CountriesList = ({ data }) => {
       {data.countries.map((country) => (
         <div key={country.id}>
           <Link to={`/countries/${country.id}`}>
-            <h2>{country.name}</h2>
+            <h2 data-testid="country-list-item">{country.name}</h2>
           </Link>
           <h3>Languages used:</h3>
           <ul>
             {country.languages.map((language) => (
-              <li key={language.id}>{language.name}</li>
+              <li data-testid="language-name" key={language.id}>{language.name}</li>
             ))}
           </ul>
         </div>

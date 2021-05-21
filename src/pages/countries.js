@@ -56,10 +56,10 @@ const Countries = (props) => {
     <div>
       <p>Cinema page</p>
       <div>
-        <button onClick={handleOnClickPrevious} disabled={onFirstPage}>
+        <button data-testid="back-button" onClick={handleOnClickPrevious} disabled={onFirstPage}>
           Wróć
         </button>
-        <button onClick={handleOnClickNext} disabled={onLastPage}>
+        <button data-testid="next-button" onClick={handleOnClickNext} disabled={onLastPage}>
           Dalej
         </button>
       </div>

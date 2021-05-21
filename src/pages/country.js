@@ -15,7 +15,7 @@ const Country = (props) => {
     <div>
       {data ? (
         <div key={country.id}>
-          <h1>{country.name}</h1>
+          <h1 data-testid="country-name">{country.name}</h1>
           {country.capital && (
             <h2>
               The capital of the given country is: <i>{country.capital.name}</i>
