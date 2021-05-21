@@ -1,7 +1,7 @@
 import { gql } from "@apollo/client";
 
 const COUNTRY_QUERY = gql`
-  query getCountry($id: ID!) {
+  query getCountry($id: String!) {
     countries(where: { id: { eq: $id } }) {
       name
       vatRate

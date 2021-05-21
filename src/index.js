@@ -6,7 +6,7 @@ import reportWebVitals from "./reportWebVitals";
 import { ApolloClient, InMemoryCache } from "@apollo/client";
 import { ApolloProvider } from "@apollo/client/react";
 
-const API_KEY = '25f50ab3-2426-447f-a4dc-a521a96ec52e'
+const API_KEY = 'c6f44684-ef76-40d0-a63a-6f852d7e9df4'
 
 const client = new ApolloClient({
   uri: `https://api.everbase.co/graphql?apikey=${API_KEY}`,
